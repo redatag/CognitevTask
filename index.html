@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Phone Book Task</title>
+        <link rel="stylesheet" href="style.css">
+		<script type="text/javascript" language="javascript" src="mockData.json"></script>
+        <script src="phoneBook.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Phone Book By Cognitev </h1>
+            </div>
+            <div class="addPhoneBook">
+                <button id="mainAdd"> Add Phone Book </button>
+                <button id="mainSearch"> Search </button>
+                <span class="dropdown">select Page size</span>
+                <select name="pageSize" id="pageSize">
+                      <option value="20" selected>20</option>
+                      <option value="30">30</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="400">400</option>
+                      <option value="500">500</option>
+                      <option value="1000">1000</option>
+                </select>
+
+            </div>
+            <div class="addForm">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" class="formFields" placeholder="Enter Name less than 100 characters" />
+                <label for="phone">Phone: </label>
+                <input type="text" id="phone" name="phone" class="formFields" placeholder="xx-xxx-xxxx"/>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" class="formFields" placeholder="reda.tag@cognitev.com" />
+                <br><br>
+                <button id="add">Add</button>
+                <button id="cancel">Cancel</button>
+            </div>
+            <div class="searchForm">
+                <label for="name">Search By: </label>
+                <input type="text" id="searchBy" name="searchBy" placeholder="Enter contact name or phone number" />
+                <br><br>
+                <button id="search">Search</button>
+                <button id="cancelSearch">Cancel</button>
+            </div>
+            <div class="booktable" style="min-height: 100%;"></div>
+            <div class="pageDiv" style="min-height: 100%;"></div>
+        </div>
+    </body>
+</html>
